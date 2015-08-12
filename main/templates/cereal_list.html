@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block body %}
+		<div class="container">
+			<div class="row">
+			{% for manufacturer in manufacturer %}
+				<div class="col-xs-3 col-sm-3 col-md-3">
+					<h2 class="manu_title">{{ manufacturer }}</h2>
+
+					{% for cereal in manufacturer.cereal_set.all %}
+						<a href="/cereal_detail/{{ cereal.pk }}">{{ cereal.name }}</a></br>
+					{% endfor %}
+				</div>
+			{% endfor %}
+			</div>
+		</div>
+{% endblock %}

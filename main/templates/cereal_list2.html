@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cereal List</title>
+</head>
+
+	<body>
+		{% for manufacturer, cereals in manufacturer_cereal.items %}
+
+			<b>{{manufacturer}}</b></br>
+
+			{% for cereal in cereals %}
+
+				{{ cereal.name }} </br>
+
+			{% endfor %}
+
+		{% endfor %}
+
+</body>
+</html>
