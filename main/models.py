@@ -15,6 +15,8 @@ class Cereal(models.Model):
 	serving_size_weight = models.FloatField(null = True)
 	cups_per_serving = models.FloatField(null = True)
 	manufacturer = models.ForeignKey('main.Manufacturer', null = True)
+	image = models.ImageField(upload_to="cereal", null=True)
+	info = models.TextField(null=True)
 	
 	def __unicode__(self):
 		return self.name

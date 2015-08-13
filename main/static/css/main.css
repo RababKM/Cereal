@@ -1,0 +1,26 @@
+.btn-primary {
+        color: #000;
+        background-color: #CF6C3A;
+}
+
+.btn-primary,
+.btn-primary:focus,
+.btn-primary:hover {
+        color: #FFF;
+        background-color: #8B3509;
+}
+
+.btn.outline {
+    background: none;
+    padding: 12px 22px;
+}
+
+.btn-primary {
+    background: -moz-linear-gradient(top,  #CF6C3A 60%, #8B3509 40%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(60%,#CF6C3A), color-stop(40%,#8B3509)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #CF6C3A 60%,#8B3509 40%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #CF6C3A 50%,#8B3509 50%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #CF6C3A 50%,#8B3509 50%); /* IE10+ */
+    background: linear-gradient(to bottom,  #CF6C3A 50%,#8B3509 50%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#CF6C3A', endColorstr='#8B3509',GradientType=0 ); /* IE6-9 */
+}
